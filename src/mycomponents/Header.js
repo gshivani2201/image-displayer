@@ -1,26 +1,15 @@
 import React from 'react'
+import Search from './Search'
+import Sort from './Sort'
 
 function Header() {
   return (
     <div>
-        <nav className="navbar navbar-expand-lg bg-light">
+        <nav className="navbar navbar-expand-lg" style={{backgroundColor : '#635666'}}>
             <div className="container-fluid">
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Sort by
-                            </a>
-                            <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a className="dropdown-item" href="#">Ascending order</a></li>
-                                <li><a className="dropdown-item" href="#">Descending order</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form className="d-flex" role="search">
-                        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                        <button className="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                <div className="collapse navbar-collapse" style={{alignItems: 'center', justifyContent: 'space-evenly'}} id="navbarSupportedContent">
+                    <Sort />
+                    <Search />
                 </div>
             </div>
         </nav>

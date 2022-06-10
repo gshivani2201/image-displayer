@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+table {
+    margin: 2rem auto;
+    width: auto;
+    border-collapse: separate;
+    border-spacing: 1rem;
+}
+
+td {
+    margin: 1rem 2rem;
+}
+
+tr {
+    border: 1px solid black;
+}
+
